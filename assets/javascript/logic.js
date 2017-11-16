@@ -1,8 +1,7 @@
 
 // THIS NEEDS TO HAPPEN FIRST
 
-// 	define starting point value of each crystal
-// 	define starting value of random number 
+
 
 // define starting value of total score
 var totalScore = 0;
@@ -73,6 +72,20 @@ function myFunction4() {
     scoreCheck();
 }
 
+function gameReset() {
+	totalScore = 0;
+	document.getElementById("totalScore").innerHTML = totalScore;
+	console.log("WE BE HERE");
+	randomNumber = Math.floor((Math.random() * 120) + 19);
+	document.getElementById("computerPick").innerHTML = randomNumber;
+	crystal1 = Math.floor((Math.random() * 12) + 1); 
+	crystal2 = Math.floor((Math.random() * 12) + 1);
+	crystal3 = Math.floor((Math.random() * 12) + 1);
+	crystal4 = Math.floor((Math.random() * 12) + 1);
+	}
+
+	
+
 // this alerts the player to whether they win or lose and adds to the win/loss tally
 function scoreCheck() {
 	console.log("WE ARE HERE");
@@ -84,7 +97,7 @@ function scoreCheck() {
         losses++;
         document.querySelector("#losses").innerHTML = losses;
         // Then we'll call the reset.
-        reset();
+        gameReset();
 
 	}
 	else if (totalScore == randomNumber) {
@@ -94,17 +107,9 @@ function scoreCheck() {
         wins++;
         document.querySelector("#wins").innerHTML = wins;
         // Then we'll reset the game
-        reset();
+        gameReset();
 
 	}
-};	
+};
 
 
-
-
-
-
-// game resets
-		// new random number generated 
-		// new crystal value generated
-		// total score is reset

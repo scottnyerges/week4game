@@ -1,143 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-	<meta charset="UTF-8">
-	<title>Crystal Collector!</title>
-	<!-- Bootstrap is used to make game look nicer -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- local stylesheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- google fonts link goes here -->
-<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-<!-- <style>body {
-    font-family: 'Playfair Display SC', serif;
-
-}
-</style> -->
-
-<div class="container">
-	<div class="flex-row">
-		<div class = "page-header">
-			<h1>Crystal Collector!</h1>
-   		</div>
-  	</div>
-
-	<div class="flex-row">
-		<p>You will be given a random number at the start of the game.</p>
-		<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-		<p>You win the game by matching your total score to the random number.</p>
-		<p>You lose if your score exceeds the random number.</p>
-		<p>The value of each crystal is hidden from you until you click on it.</p>
-		<p>Each time when the game starts, the game will change the values of each crystal.</p>
-	</div>
-	<div class="flex-row">
-		<div class="flex-column">
-		random number goes here
-		</div>
-		<div class="flex-column">win/loss box goes here
-		</div>	
-	</div>
-	<div class="flex-row">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crystal Collector!</title>
+		<!-- Bootstrap is used to make game look nicer -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- local stylesheet -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- google fonts link goes here -->
+		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	</head>
+	<body>
 		<div class="container">
-		<div class="col-lg-3">
-			<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/f/f4/Crystal_multi_tech.png/revision/latest?cb=20151121235854" class="img-fluid" alt="Responsive image">
-		</div>	
-	<div class="col-lg-3">
-		<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cf/5-Star_Crystal.png/revision/latest?cb=20151121165521" class="img-fluid" alt="Responsive image">
-				</div>	
-
-	<div class="col-lg-3">
-		<img src="http://vignette2.wikia.nocookie.net/marvel-contestofchampions/images/8/84/Crystal_multi_science.png/revision/latest?cb=20151121235753" class="img-fluid" alt="Responsive image">
-				</div>	
-
-		<div class="col-lg-3">
-		<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/f/fb/Crystal_msmarvel.png/revision/latest?cb=20151121235439" class="img-fluid" alt="Responsive image">
-				</div>	
-		</div>
-	</div>
-	<div class="flex-row">
-		total score, box go here
-	</div>
-		
-		
-	
-
-<!-- LAYOUT: HTML/CSS -->
-
-<!-- HEADER -->
-<!-- display "Crystal Collector!" in box H1 -->
-	<!-- define box size, font color, background color, margins, padding -->
-
-<!-- ROW -->
-<!-- display game instructions for user in box P -->
-	<!-- define box size, font color, background color, margins, padding -->
-
-<!-- ROW -->
-<!-- display computer's random number in box H1 -->
-	<!-- define box size, font color, background color, margins, padding -->
-
-<!-- display win/loss tally in box H2 -->
-	<!-- define box size, font color, background color, margins, padding-->
-
-<!-- ROW -->
-<!-- display 4 crystals in individual boxes -->
-	<!-- define box size, background color, justification, margins, padding -->
-	<!-- source images for 4 crystals -->
-		<!-- define crystal size -->
-
-<!-- ROW -->
-<!-- display "Your total score" in box P -->
-	<!-- define box size, font color, background color, margins, padding -->
-
-<!-- display total numerical score in box H1 -->
-	<!-- define box size, font color, background color, margins, padding -->
-
-<!-- code to begin game DIV ID="GAME" -->
-
-
-<!-- JAVASCRIPT -->
-<!-- THIS NEEDS TO HAPPEN FIRST -->
-	<!-- define point value of each crystal VAR -->
-		<!-- point value to be between 1 and 12 -->
-		<!-- this should be initially defined as [] -->
-
-	<!-- define value of random number VAR -->
-		<!-- value to be between 19 and 120 -->
-		<!-- this should initially be defined as [] -->
-
-	<!-- generate random values for crystals MATH -->
-
-	<!-- generate random number MATH -->
-		<!-- display random number in appropriate box -->
-
-<!-- THIS HAPPENS NEXT -->
-	<!-- player clicks crystal ONCLICK -->
-		<!-- player's score is updated based on crystal value -->
-			<!-- THIS LOOPS UNTIL...  -->
-			<!-- player wins when score matches random number IF/ELSE x==y/x>y -->
-				<!-- print message "You won!" in win/loss box -->
-			<!-- player loses when score exceeds random number  -->
-				<!-- print message "You lost!" in win/loss box -->
-			<!-- THEN.... -->
-
-<!-- game resets -->
-	<!-- new random number is generated -->
-	<!-- new crystal values are generated -->
-	<!-- player score is reset to 0 -->
-	<!-- continue to tally total wins/losses -->
-
-<!-- game begins again -->
-
-<!-- Link to the javascript file -->
-<script src="assets/javascript/logic.js"></script>
-
-</body>
-
-</html>
+			<div class="row">
+				<!-- display "Crystal Collector!" in box -->
+				<div class = "page-header">
+					<h1>Crystal Collector!</h1>
+				</div>
+			</div>
+			<!-- display game instructions for user in box -->
+			<div class="row">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to the random number.</p>
+				<p>You lose if your score exceeds the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+			<div class="row">
+				<!-- display computer's random number in box -->
+				<div class="col-lg-5" id="computerPick">
+					<!-- this space left blank til -->
+				</div>
+				<!-- display "Your total score" in box -->
+				<div class="col-lg-5" id="totalScore">
+					<!-- this is a placeholder til i can figure it out -->
+					Your score so far is...
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<!-- display 4 crystals in individual boxes -->
+				<div class="container">
+					<div class="col-lg-2">
+						<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/f/f4/Crystal_multi_tech.png/revision/latest?cb=20151121235854" class="img-fluid" alt="Responsive image" id="crystal1">
+					</div>
+					<div class="col-lg-2">
+						<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cf/5-Star_Crystal.png/revision/latest?cb=20151121165521" class="img-fluid" alt="Responsive image" id="crystal2">
+					</div>
+					<div class="col-lg-2">
+						<img src="http://vignette2.wikia.nocookie.net/marvel-contestofchampions/images/8/84/Crystal_multi_science.png/revision/latest?cb=20151121235753" class="img-fluid" alt="Responsive image" id="crystal3">
+					</div>
+					<div class="col-lg-2">
+						<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/f/fb/Crystal_msmarvel.png/revision/latest?cb=20151121235439" class="img-fluid" alt="Responsive image" id="crystal4">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- display win/loss tally in box -->
+				<div class="col-lg-5">
+					 <p>Wins: <span id="wins">0</span></p>
+					 <p>Losses: <span id="losses">0</span></p>
+				</div>
+			</div>
+			
+			<!-- code to begin game DIV ID="GAME" -->
+			<!-- Link to the javascript file -->
+			<script src="assets/javascript/logic.js"></script>
+		</body>
+	</html>
